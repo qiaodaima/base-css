@@ -1,0 +1,38 @@
+// 字体图标
+@mixin iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px; font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    // 修改阿里图标样式
+    line-height: 1;
+    vertical-align: middle;
+    font-size: inherit;
+    font-style: normal;
+    color: inherit;
+}
+
+// 圆形
+@mixin circular($size) {
+    width: $size; height: $size;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+// 单行超出省略号
+@mixin textEllipsis($maxLength: 100%) {
+    max-width:$maxLength;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+
+// 多行超出省略号
+@mixin multiTextEllipsis($row: 1) {
+    display: -webkit-box;
+    -webkit-line-clamp: $row;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow : hidden;
+}

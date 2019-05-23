@@ -1,0 +1,18 @@
+@import './_mixin';
+
+// 页面基础公共样式
+html {
+    color:#333;
+
+    body {
+        max-width: 7.5rem;
+        margin:0 auto;
+        overflow-x:auto;
+    }
+    .hidden {
+        display: none !important;
+    }
+    .iconfont {
+        @include iconfont;
+    }
+}
