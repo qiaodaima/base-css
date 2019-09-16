@@ -1,13 +1,13 @@
-@charset "UTF-8";
+@charset "utf-8";
 
 /*!
 * 参考：http://www.zhangxinxu.com/wordpress/?p=758
-* 参考：https://github.com/necolas/normalize.css
 * 参考：http://g.alicdn.com/msui/sm/0.6.2/css/sm.css
-* 参考：http://www.cnblogs.com/yizuierguo/archive/2009/07/15/1524106.html
+* 参考：https://github.com/necolas/normalize.css/blob/master/normalize.css
 * 参考：https://ant.design/
 *
-* github: github.com/qiaodaima
+* Email:qiaodaima@qq.com
+* https://github.com/qiaodaima
 */
 
 // 盒子模型
@@ -16,16 +16,8 @@
     &:before,
     &:after {
         box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
     }
-}
-
-// 根元素
-html {
-    font-size: 14px;
-    line-height: 1.5;
-}
-body {
-    margin: 0;
 }
 
 // 行内元素统一行块
@@ -96,7 +88,7 @@ address {
 }
 b,
 strong {
-    font-weight: normal;
+    font-weight: inherit;
 }
 small {
     font-size: inherit;
@@ -105,13 +97,6 @@ abbr[title] {
     border-bottom: none;
     text-decoration: none;
     cursor: pointer;
-}
-
-// 上标、下标
-sub,
-sup {
-    line-height: 1;
-    font-size: 12px;
 }
 
 // 表单
@@ -126,46 +111,13 @@ textarea {
     outline: none;
     color: inherit;
     font: inherit;
+    appearance: none;
 }
 legend,
 fieldset,
 blockquote {
     margin: 0;
     padding: 0;
-}
-
-// 手势表单
-button,
-select,
-input[type="Date"],
-input[type="file"],
-input[type="reset"],
-input[type="radio"],
-input[type="color"],
-input[type="submit"],
-input[type="button"],
-input[type="checkbox"] {
-    cursor: pointer;
-}
-
-// 表单禁用
-input:disabled,
-button:disabled,
-select:disabled,
-textarea:disabled {
-    cursor: not-allowed;
-}
-
-// 列表
-dl,
-dd {
-    margin: 0;
-}
-ol,
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
 }
 
 // 表格
@@ -180,6 +132,18 @@ th,
 td {
     padding: 0;
     font-weight: normal;
+}
+
+// 列表
+dl,
+dd {
+    margin: 0;
+}
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 // 链接、分割线、图片

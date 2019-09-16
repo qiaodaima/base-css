@@ -1,3 +1,17 @@
+@charset "utf-8";
+
+// 浮动、清除浮动
+@mixin clearFix {
+    &:after {
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+        font-size: 0;
+    }
+}
+
 // 字体图标
 @mixin iconfont {
     font-family: "iconfont" !important;
@@ -22,10 +36,10 @@
 
 // 单行超出省略号
 @mixin textEllipsis($maxLength: 100%) {
-    max-width:$maxLength;
-    white-space:nowrap;
-    text-overflow:ellipsis;
-    overflow:hidden;
+    max-width: $maxLength;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 // 多行超出省略号
