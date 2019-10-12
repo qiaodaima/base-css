@@ -20,6 +20,15 @@
     }
 }
 
+html {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+body {
+    margin:0 auto;
+    color:#333;
+}
+
 // 行内元素统一行块
 a,
 b,
