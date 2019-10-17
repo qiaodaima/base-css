@@ -166,6 +166,11 @@ img {
     border: none;
     vertical-align: top;
 }
+// 空路径会产生边框效果
+img[src=""],
+img:not([src]) {
+    opacity:0;
+}
 hr {
     margin: 0;
 }
